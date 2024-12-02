@@ -7,9 +7,16 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ConlagoExamen2P">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Velcoidades Santiago Conlago"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{OnPlatform 'velocidad.png', iOS='velocidad.png', MacCatalyst='velocidad.png'}" />
+
+        <ShellContent
+            Title="Acerca de"
+            ContentTemplate="{DataTemplate local:Velocidad}"
+            Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+    </TabBar>
 
 </Shell>
